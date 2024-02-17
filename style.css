@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Mukta';
+}
+
+body {
+    background-color: #fff;
+    max-width: 100%;
+    margin: 0;
+    color: #fff;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(23, 24, 53));
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Define a altura mínima do corpo para 100% da altura da viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-form {
+    width: 80%;
+    max-width: 40rem; /* Ajusta o máximo da largura do formulário */
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 20px;
+    border: none;
+    border-radius: 3rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-image:linear-gradient(to right, rgb(23 24 53), rgb(38 40 85 / 50%)), url(assets/img/fundo.jpg);
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0 0 30px #030303;
+}
+
+.container-form img {
+    display: none; /* Esconde a imagem dentro do div */
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+form {
+    margin-top: 1px;
+}
+
+fieldset {
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+#fieldsetGender {
+    border: none;
+    padding: 10px;
+    margin-bottom: -2rem;
+}
+
+#fieldsetGender legend {
+    font-weight: bold;
+}
+
+#fieldsetGender label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#fieldsetGender input[type="radio"] {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+#fieldsetBarthDate {
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: -2rem;
+}
+
+#fieldsetBarthDate legend {
+    font-weight: bold;
+}
+
+#fieldsetBarthDate input[type="date"] {
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, .3);
+}
+
+legend {
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select {
+    background-color: rgba(255, 255, 255, .75);
+    display: block;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: -2rem;
+    margin-bottom: 1rem;
+}
+
+button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media screen {
+}
+
+::-webkit-scrollbar {
+    background-color: #ffffffe3;
+    width: 0px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 0px;
+}

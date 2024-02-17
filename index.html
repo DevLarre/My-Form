@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container-form">
+
+        <img src="assets/img/fundo.jpg" alt="fundo">
+
+        <h1>Registration form</h1>
+
+        <form autocomplete="on">
+            <fieldset>
+                <p>
+                    <label for="name">Name</label> <br>
+                    <input type="text" name="name" placeholder="Name required" id="nameField" minlength="3" maxlength="18"
+                        required />
+                </p>
+                <p>
+                    <label for="name">Last Name</label> <br>
+                    <input type="text" name="name" placeholder="Last name required" id="firstName" minlength="3"
+                        maxlength="18" required />
+                </p>
+                <fieldset id="fieldsetGender">
+                    <legend id="personalGender">Personal gender</legend>
+                    <input type="radio" name="gender" id="genderM" checked>
+                    <label for="genderM" class="gender">Man</label>
+                    <input class="genderRadio" type="radio" name="gender" id="genderF" />
+                    <label for="genderF" class="gender">Woman</label>
+                </fieldset>
+                <br>
+
+                <fieldset id="fieldsetBarthDate">
+                    <legend>Date of birth</legend>
+                    <input type="date" name="birthDate" id="birthDate" required />
+                </fieldset>
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>Contact</legend>
+                <p>
+                    <label for="phone">Cell phone</label> <br>
+                    <input type="tel" name="phone" id="phone" pattern="^\(\d{2}\)\d{4}-\d{5}$" inputmode="numeric"
+                        placeholder="(xx) xxxx-xxxxx" title="Report according to the example in the box." required>
+                </p>
+                <p>
+                    <label for="email">E-mail</label> <br>
+                    <input type="email" name="email" id="email" placeholder="Type your e-mail"
+                        pattern="^[^@]+@[^@]+\.[^@]+$" title="Enter a valid email, including the symbol @." required>
+                </p>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Address</legend>
+                <p>
+                    <label for="country">Country</label><br>
+                    <select name="country" id="country">
+                        <optgroup label="South America">
+                            <option value="ar">Argentina</option>
+                            <option value="bl">Bolivia</option>
+                            <option value="br">Brazil</option>
+                            <option value="ch">Chile</option>
+                            <option value="co">Colombia</option>
+                            <option value="ec">Ecuador</option>
+                            <option value="gu">Guyana</option>
+                            <option value="fr">French Guiana</option>
+                            <option value="pr">Paraguay</option>
+                            <option value="pe">Peru</option>
+                            <option value="su">Suriname</option>
+                            <option value="ur">Uruguay</option>
+                            <option value="vn">Venezuela</option>
+
+                        <optgroup label="Central America">
+                            <option value="an">Antigua and Barbuda</option>
+                            <option value="ba">Bahamas</option>
+                            <option value="bd">Barbados</option>
+                            <option value="be">Belize</option>
+                            <option value="co">Costa Rica</option>
+                            <option value="cu">Cuba</option>
+                            <option value="do">Dominica</option>
+                            <option value="el">El Salvador</option>
+                            <option value="gr">Granada</option>
+                            <option value="gu">Guatemala</option>
+                            <option value="ha">Haiti</option>
+                            <option value="ho">Honduras</option>
+                            <option value="ja">Jamaica</option>
+                            <option value="ni">Nicaragua</option>
+                            <option value="pa">Panama</option>
+                            <option value="dr">Dominican Republic</option>
+                            <option value="sl">Saint Lucia</option>
+                            <option value="sk">Saint Kitts and Nevis</option>
+                            <option value="sv">Saint Vincent and the Grenadines</option>
+                            <option value="tt">Trinidad and Tobago</option>
+                        </optgroup>
+
+                        </optgroup>
+                        <optgroup label="North America">
+                            <option value="us">U.S(United States)</option>
+                            <option value="ca">Canada</option>
+                            <option value="mx">Mexico</option>
+                        </optgroup>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="state">State</label> <br>
+                    <input type="text" id="state" name="state" placeholder="Enter your State">
+                </p>
+
+                <p>
+                    <label for="city">City</label> <br>
+                    <input type="text" name="city" id="city" placeholder="Enter your City" />
+                </p>
+            </fieldset>
+
+            <div class="button">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset Form</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+<script src="./script.js"></script>
+</html>
